@@ -8,7 +8,8 @@
 /* GENERAL STYLES */
 
 body {
-  background-color: #a7a7a7;
+  background-color: #023047;
+  color: #f2e9e4;
   margin: 0 auto;
   line-height: 1.6;
 }
@@ -22,11 +23,7 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: #2e2e2e;
-}
-
-.about {
-  display: flex;
+  background-color: #4a4e69;
 }
 
 /*  TYPOGRAPHY  */
@@ -46,4 +43,39 @@ h1 {
 h2 {
   font-size: 1.5em;
   font-weight: 600;
+}
+
+p {
+  font-size: 1em;
+}
+
+/*  ABOUT ME */
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.about-me span {
+  background-color: #4a4e69;
+  color: #f2e9e4;
+}
+
+.word {
+  margin: auto;
+  color: white;
+  text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+}
+
+.about {
+  margin-right: 2em;
+}
+
+.about-me img {
+  box-shadow: 0.4em 0.4em 0.75em rgba(0, 0, 0, 0.4),
+    0.2em 0.2em 0.35em rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
 }
