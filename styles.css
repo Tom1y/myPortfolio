@@ -1,7 +1,49 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+/* GENERAL STYLES */
+
 body {
-  background-color: #d7d7d7;
+  background-color: #a7a7a7;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.nav-bar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #2e2e2e;
 }
 
 .about {
   display: flex;
+}
+
+/*  TYPOGRAPHY  */
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 600;
 }
