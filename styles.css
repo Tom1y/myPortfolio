@@ -187,12 +187,18 @@ p {
   .desktop {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin: 3em 4em;
-    flex: 1 1 auto;
+    justify-content: center;
+    max-width: 1300px;
+    margin-left: 25em;
+    width: 100%;
   }
 
-  .info {
+  /* .info {
     align-self: flex-end;
   }
+
+  .about {
+    text-align: center;
+    align-self: center;
+  } */
 }
