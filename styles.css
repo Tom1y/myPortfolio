@@ -2,13 +2,13 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Raleway", sans-serif;
 }
 
 /* GENERAL STYLES */
 
 body {
-  background-color: #023047;
+  background-color: #1d3557;
   color: #f2e9e4;
   margin: 0 auto;
   line-height: 1.6;
@@ -19,11 +19,23 @@ img {
   max-width: 100%;
 }
 
+/* nav-bar */
+
 .nav-bar ul {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  background-color: #4a4e69;
+  justify-content: space-evenly;
+  background-color: #457b9d;
+  color: #f2e9e4;
+  margin: 0;
+  list-style-type: none;
+}
+
+a {
+  color: #f2e9e4;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em 1em;
 }
 
 /*  TYPOGRAPHY  */
@@ -47,6 +59,7 @@ h2 {
 
 p {
   font-size: 1em;
+  color: #f1faee;
 }
 
 /*  ABOUT ME */
@@ -54,9 +67,16 @@ p {
 .about-me {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 40px 0;
+  text-align: center;
+  margin: 2em;
+}
+
+.about p {
+  font-weight: bold;
+}
+
+.about h1 {
+  color: #a8dadc;
 }
 
 .about-me span {
@@ -64,18 +84,115 @@ p {
   color: #f2e9e4;
 }
 
-.word {
-  margin: auto;
-  color: white;
-  text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
-}
-
-.about {
-  margin-right: 2em;
+.about-me-img {
+  align-self: center;
 }
 
 .about-me img {
   box-shadow: 0.4em 0.4em 0.75em rgba(0, 0, 0, 0.4),
     0.2em 0.2em 0.35em rgba(0, 0, 0, 0.4);
   border-radius: 5px;
+}
+
+/*  INFO  */
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em 2em;
+  text-align: center;
+}
+
+.info p {
+  border-radius: 10px;
+  box-shadow: 0.4em 0.4em 0.75em rgba(0, 0, 0, 0.4),
+    0.2em 0.2em 0.35em rgba(0, 0, 0, 0.4);
+  background-color: #457b9d;
+  padding: 1em 1em;
+}
+
+@media (min-width: 900px) {
+  .info {
+    display: block;
+    align-self: center;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 2;
+    margin-bottom: 3em;
+  }
+}
+
+/*  PROJECTS */
+
+.myProjects {
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.projects h2 {
+  margin: 1em;
+}
+
+.project-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1faee;
+  color: #1d3557;
+  border-radius: 10px;
+  box-shadow: 0.4em 0.4em 0.75em rgba(0, 0, 0, 0.4),
+    0.2em 0.2em 0.35em rgba(0, 0, 0, 0.4);
+  margin: 1em;
+}
+
+.project-box p {
+  color: #e63946;
+  font-weight: bold;
+}
+
+.project-box img {
+  width: 90%;
+  padding: 0.8em;
+}
+
+@media (min-width: 1200px) {
+  .projects {
+    display: flex;
+    flex-direction: row;
+    margin: 2em 2em;
+  }
+}
+
+/*   CONTACT  */
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #457b9d;
+}
+
+/*  DESKTOP  */
+
+@media (min-width: 1400px) {
+  .desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 3em 4em;
+    flex: 1 1 auto;
+  }
+
+  .info {
+    align-self: flex-end;
+  }
 }
